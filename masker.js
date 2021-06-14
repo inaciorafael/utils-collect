@@ -1,13 +1,17 @@
 export default function (value, config) {
   const masks = config.sort((a, b) => a.length - b.length);
   let i = 0;
+
   while (i < masks.length) {
     const currentMask = masks[i];
     i += 1;
     const nextMask = masks[i];
-    if (!(nextMask && maskit(value, nextMask).length > currentMask.length))
+
+    if (!(nextMask && maskit(value, nextMask).length > currentMask.length)) {
       return maskit(value, currentMask);
+    }
   }
+
   return ''; // empty masks
 }
 
