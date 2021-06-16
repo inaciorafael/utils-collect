@@ -7,6 +7,13 @@ Welcome to the list of breaker features that saved my life and still save many t
 - The masker.js is a function that as its name says, it generates a mask for the string normally used in the application's inputs to format the text while the user types, it can also be used when, for example, you receive a value from BackEnd a CPF for example but it is not formatted and you need to show the CPF to the user now what? Using masker.js is easy.
 > Usage example in Reactjs 
 
+| Mask |    Pattern   |        Value        |             Usage             |  Return |
+|:----:|:------------:|:-------------------:|:-----------------------------:|:-------:|
+|   #  |     [0-9]    |       numbers       |    Masker('456', ['##,#'])    |   45,6  |
+|   A  |   [a-zA-Z]   |       letters       | Masker('masker', ['AAA-AAA']) | mas-ker |
+|   N  | [\d\a-z\A-Z] | letters and numbers |   Masker('Av54', ['NN.NN'])   |  Av.54  |
+
+
 ![](./images/masker.png)
 
 ```javascript
