@@ -62,6 +62,8 @@ const App = () => {
 ## RegExp Validations
 - Email ```/[a-zA-z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]{3,}/```
 > email@email.com
+- Full Name`/^[a-zA-Z]{1,}(?: [a-zA-Z]+)?(?: [a-zA-Z]+)?(?: [a-zA-Z]+)?(?: [a-zA-Z]+)?(?: [a-zA-Z]+)?(?: [a-zA-Z]+)?$/`
+> Ethan Belmont da Silva
 - CPF `/[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}/`
 > 999.999.999-99
 - Date `/^(0?[1-9]|[12][0-9]|3[01])\/(0?[1-9]|1[012])\/19[789][0-9]|20[01][0-9]/`
